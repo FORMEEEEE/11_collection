@@ -38,6 +38,8 @@ public class StudentService {
 		studentList.add(new Student("김아지", 30, "서울시 강남구", 'M', 80));
 		studentList.add(new Student("오미나", 27, "충북 청주시", 'F', 90));
 		studentList.add(new Student("박주희", 24, "서울 서대문구", 'F', 70));
+		studentList.add(new Student("박지성", 44, "서울 동대문구", 'M', 88));
+		
 	}
 
 	
@@ -267,7 +269,7 @@ public class StudentService {
 			
 			Student temp = studentList.set(index, new Student(name, age, region, gender, score));
 			
-			
+			studentList.set(index, temp);
 			
 			return temp.getName() + "의 정보가 변경되었습니다";
 		}
